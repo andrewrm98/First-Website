@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <style>
+            .accordion {
+                background-color: #eee;
+                color: #444;
+                cursor: pointer;
+                padding: 18px;
+                width: 100%;
+                border: none;
+                text-align: left;
+                outline: none;
+                font-size: 15px;
+                transition: 0.4s;
+            }
+
+            .active, .accordion:hover {
+                background-color: #ccc;
+            }
+
+            .accordion:after {
+                content: '\002B';
+                color: #777;
+                font-weight: bold;
+                float: right;
+                margin-left: 5px;
+            }
+
+            .active:after {
+                content: "\2212";
+            }
+
+            .panel {
+                padding: 0 18px;
+                background-color: white;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.2s ease-out;
+            }
+        </style>
+        <title>Andrew</title>
+    </head>
+    <body>
+    <div class = "container">
+
+        <!-- Header and info -->
+        <h1 class = "text-center text-primary">Andrew Morrison</h1>
+        <ul class = "list-inline text-center">
+            <p class = "list-inline-item">7 Corey drive Oxford, MA</p>
+            <p class = "list-inline-item">508-341-4471</p>
+            <p class = "list-inline-item">armorrison@wpi.edu</p>
+        </ul>
+        <hr>
+        <p class = "text-center">Worcester Polytechnic Institute '20<br/>Computer Science<br/>GPA: 3.20</p>
+        <hr>
+        <br>
+    </div>
+    <div>
+        <p class = "bg-primary text-center text-white"><strong>Skills</strong></p>
+        <p class = "text-center">Agile, UML, Scrum, Java, Python, C, C++, SQL, GitHub, Git, A*, HTML, JavaFX, Lucidchart, C#, Slack, Linux, Intel x86, Graph Theory, Unity, Photoshop, Maya, Microsoft Office
+        </p>
+        <br>
+        <p class = "bg-primary text-center text-white"><strong>Relevant Classes</strong></p>
+        <p class = "text-center">Software Engineering, Operating Systems, Foundations of Computer Science, Machine Organization and Assembly Language, Accelerated Object-Oriented design concepts, Systems Programming concepts, Algorithms, Discrete Mathematics, Introduction to ECE, Calculus I - IV, Physics 1, Physics 2, Statistics, Probability</p>
+        <br>
+    </div>
+    <div class = "container">
+        <h3 class = "text-center">Classes & Projects</h3>
+        <button class="accordion"><strong>Software Engineering</strong></button>
+        <div class="panel">
+            <h3><strong>Hospital Path-finding Application</strong></h3>
+            <h4>Assistant Lead Software Developer; Database specialty</h4>
+            <h5>March - May, 2018</h5>
+            <h5>Java</h5>
+            <ul>
+                <li>In a team of ten, used Slack and daily Scrum meetings to effectively communicate and delegate tasks</li>
+                <li>While I worked on the database team, I learned about every aspect of the project through good team communication and helping all teams as assistant lead developer</li>
+                <li>Created surveys and interviewed hospital employees to gather requirements</li>
+                <li>Employed Agile methodologies and UML diagrams to design a path-finding application for a real hospital</li>
+                <li>Used Photoshop XD, Invision, JavaFX, and Scenebuilder to design and develop a user-friendly interface</li>
+                <li>Integrated a JavaDB database using SQL that consisted of destination nodes within the hospital on a 3D wireframe map</li>
+                <li>Implemented the A* algorithm to determine the shortest path between a given start and end node</li>
+                <li>Anybody can choose from a list of "quick destinations" like the nearest bathroom or cafeteria</li>
+                <li>Users can also login, with a user database, for more functionality</li>
+                <li>A verified user can customize their path by choosing any start and end node in the hospital with an easy-to-use menu</li>
+                <li>Users consisted of doctors, patients, nurses, and hospital staff</li>
+                <li>Patients can see their assigned doctor and nurses, their discharge date, and can get directions directly to their room</li>
+                <li>Patients can request for help from nurses or hospital staff</li>
+                <li>When a patient requests for help, their request is sent to the request database where nurses, doctors, and staff can see the request, fulfill it, and then mark it as completed</li>
+            </ul>
+            <h5>Class Outcome</h5>
+            <p>This class taught me much more than any other. Most importantly, learning to work with a large group on a single project was challenging, but in the end I gained project management skills, accountability, work-ethic, and confidence in learning new and daunting skills
+            <br/>I also learned a lot about databases, user interfaces, creating more efficient back-ends, and a strong understanding of java and programming in general</p>
+        </div>
+
+        <button class="accordion"><strong>Operating Systems</strong></button>
+        <div class="panel">
+            <ul class = "list-unstyled">
+                <li>
+                    <h3><strong>Implementing Virtual Memory</strong></h3>
+                    <h4>Pair programming</h4>
+                    <h5>Feb, 2018</h5>
+                    <h5>C</h5>
+                    <ul>
+                        <li>Created a memory manager that simulated physical and virtual memory using paging and swapping to implement essentials of paging, including: a per-process page table, address translation, and multiple pages in memory concurrently</li>
+                        <li>In addition, disc was simulated by a file that stored evicted pages that could be later swapped back into memory by the memory manager</li>
+                        <li>Users could choose a process to run and request more memory, store a value in memory, or load a value from memory</li>
+                    </ul>
+                    <hr>
+                </li>
+                <li>
+                    <h3><strong>Threads and Synchronization</strong></h3>
+                    <h4>Pair programming</h4>
+                    <h5>Feb, 2018</h5>
+                    <h5>C</h5>
+                    <ul>
+                        <li>Created a multi-threaded simulation of a communal bathroom</li>
+                        <li>Each person ran on its own individual thread, and synchronization primitives such as mutex locks and condition variables were used to prevent opposite genders from entering the bathroom at the same time</li>
+                        <li>If the bathroom was male occupied, the females would wait outside until the bathroom was marked vacant by the last exiting male, then the first female would immediately enter and make the bathroom female occupied</li>
+                        <li>Used condition variables to improve fairness and efficiency</li>
+                        <li>Learned strategies to prevent deadlock, livelock, and race conditions</li>
+                    </ul>
+                    <hr>
+                </li>
+                <li>
+                    <h3><strong>Kernel Interception</strong></h3>
+                    <h4>Pair programming</h4>
+                    <h5>Jan, 2018</h5>
+                    <h5>C</h5>
+                    <ul>
+                        <li>Changed the operation of the base operating system by changing existing system calls</li>
+                        <li>Used a monitoring approach to create an on-access anti-virus scanner that checked all opened files for the string "virus"</li>
+                        <li>Reinterpreted an existing system call to create procAncestry</li>
+                        <li>procAncestry is an executable given a PID</li>
+                        <li>It will then navigate to the given PID and begin climbing its ancestral tree and return all related processes including all parents (and parents of parents), children (and children of children), and siblings</li>
+                    </ul>
+                    <hr>
+                </li>
+                <li>
+                    <h3><strong>Midday Commander</strong></h3>
+                    <h4>Pair programming</h4>
+                    <h5>Jan, 2018</h5>
+                    <h5>C</h5>
+                    <ul>
+                        <li>Created a text-based shell, or command line, to interact with processes</li>
+                        <li>Supported background processes</li>
+                        <li>Could perform commands such as: whoami, last, ls, cd, add command, exit, print working directory, and print current background processes</li>
+                        <li>Users can add any custom command using add command and can specify it as a background task by adding a '&' to the end of the command</li>
+                        <li>Learned about process creation, termination, and resource management</li>
+                    </ul>
+                    <hr>
+                </li>
+                <h5>Class Outcome</h5>
+                <ul class = "list-unstyled">
+                    <li><strong>Learned a lot about the inner workings of operating systems such as:</strong></li>
+                    <li>Processes</li>
+                    <li>CPU Scheduling</li>
+                    <li>Address space</li>
+                    <li>Address translation</li>
+                    <li>Segmentation</li>
+                    <li>Free space management</li>
+                    <li>Paging, page-tables, multi-level page-tables, swapping</li>
+                    <li>Concurrency and threads</li>
+                    <li>Condition variables, mutex locks, semaphores</li>
+                    <li>Data integrity, data protection</li>
+                    <li>I/O Devices, Files and directories</li>
+                </ul>
+            </ul>
+        </div>
+
+        <button class="accordion"><strong>Machine Organization & Assembly Language</strong></button>
+        <div class="panel">
+            <ul class = "list-unstyled">
+                <li>
+                    <h3><strong>CacheLab</strong></h3>
+                    <h4>Pair programming</h4>
+                    <h5>Dec, 2017</h5>
+                    <h5>C</h5>
+                    <ul>
+                        <li>Simulated the behavior of a cache memory to optimize hits and minimize cache misses and evictions</li>
+                        <li>Wrote a matrix transpose function to optimally use the cache</li>
+                        <li>Learned how cahces work and how to use them effectively</li>
+                    </ul>
+                    <hr>
+                </li>
+                <li>
+                    <h3><strong>AttackLab</strong></h3>
+                    <h4>Pair programming</h4>
+                    <h5>Dec, 2017</h5>
+                    <h5>C</h5>
+                    <ul>
+                        <li>Created five attacks on security vulnerabilities on two programs</li>
+                        <li>Used gadgets and buffer overflow attacks/hacks to gain control of target programs</li>
+                        <li>Discovered many types of security vulnerabilities and how to exploit them</li>
+                        <li>Learned how to write more secure programs</li>
+                    </ul>
+                    <hr>
+                </li>
+            </ul>
+        </div>
+
+        <button class="accordion"><strong>Accelerated Object-Oriented Design Concepts</strong></button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button class="accordion"><strong>Systems Programming Concepts</strong></button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight){
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+    </div>
+    </body>
+</html>
