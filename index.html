@@ -7,6 +7,8 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <!-- Accordion CSS -->
         <style>
             .accordion {
                 background-color: #eee;
@@ -45,40 +47,78 @@
                 transition: max-height 0.2s ease-out;
             }
         </style>
-        <title>Andrew</title>
-    </head>
-    <body>
-    <div class = "container">
 
-        <!-- Header and info -->
-        <h1 class = "text-center text-primary">Andrew Morrison</h1>
+        <!-- Parallax CSS -->
+        <style>
+			.parallax { 
+    		/* The image used */
+    		background-image: url("code.jpeg");
+
+    		/* Set a specific height */
+    		height: 500px; 
+
+    		/* Create the parallax scrolling effect */
+    		background-attachment: fixed;
+    		background-position: center;
+    		background-repeat: no-repeat;
+    		background-size: cover;
+			}
+		</style>
+
+		<!-- Border -->
+		<style>
+			div {
+				border: 5px solid blue;
+			}
+		</style>
+
+        <title>Andrew Morrison Resume</title>
+    </head>
+    <body background = "code.jpeg" class = "parallax">
+    	<br>
+
+    <!-- Name -->
+    <div class = "container bg-danger">
+    		<h1 class = "bg-danger text-center text-white">Andrew Morrison</h1>
+    </div>
+
+     <!-- Header and info -->
+    <div class = "bg-white container">
         <ul class = "list-inline text-center">
             <p class = "list-inline-item">7 Corey drive Oxford, MA</p>
             <p class = "list-inline-item">508-341-4471</p>
             <p class = "list-inline-item">armorrison@wpi.edu</p>
         </ul>
-        <hr>
         <p class = "text-center">Worcester Polytechnic Institute '20<br/>Computer Science<br/>GPA: 3.23</p>
-        <hr>
-        <br>
     </div>
-    <div>
-        <p class = "bg-primary text-center text-white"><strong>Skills</strong></p>
-        <p class = "text-center">
-            <ul>
-                <li><strong>Programming Languages: </strong>Java, C, C++, C#, Python, Oracle, JavaDB, JavaFX, MySQL, HTML</li>
-                <li><strong>Software Development Tools: </strong>IntelliJ IDE, Eclipse IDE, PyCharm IDE, Sublime, Atom, GitHub, Gradle, TravisCI</li>
-                <li><strong>Agile Project Management Tools: </strong>GitHub Project, Slack, Trello, Scrum, UML</li>
-                <li><strong>Other: </strong>Windows, Mac, Linux, Intel x86, Unity, Maya, Photoshop, Graph Theory, Microsoft Office</li>
-        </p>
-        <br>
-        <p class = "bg-primary text-center text-white"><strong>Relevant Classes</strong></p>
-        <p class = "text-center">Software Engineering, Operating Systems, Foundations of Computer Science, Machine Organization and Assembly Language, Accelerated Object-Oriented design concepts, Systems Programming concepts, Algorithms, Discrete Mathematics, Introduction to ECE, Calculus I - IV, Physics 1, Physics 2, Statistics, Probability</p>
-        <br>
+    <br>
+    <div class = "bg-danger container">
+        <h4 class = "text-center text-white"><strong>Skills</strong></h4>
     </div>
-    <div class = "container">
-        <h3 class = "text-center">Classes & Projects</h3>
-        <button class="accordion"><strong>Software Engineering</strong></button>
+        <div class = "bg-white container">
+        	<p class = "text-center">
+            	<ul>
+                	<li><strong>Programming Languages: </strong>Java, C, C++, C#, Python, Oracle, JavaDB, JavaFX, MySQL, HTML</li>
+                	<li><strong>Software Development Tools: </strong>IntelliJ IDE, Eclipse IDE, PyCharm IDE, Sublime, Atom, GitHub, Gradle, TravisCI</li>
+                	<li><strong>Agile Project Management Tools: </strong>GitHub Project, Slack, Trello, Scrum, UML</li>
+                	<li><strong>Other: </strong>Windows, Mac, Linux, Intel x86, Unity, Maya, Photoshop, Graph Theory, 	Microsoft Office</li>
+            	</ul>
+        	</p>
+    	</div>
+    	<br>
+    	<div class = "bg-danger container">
+        	<h4 class = "text-center text-white"><strong>Relevant Classes</strong></h4>
+   		</div>
+        <div class = 'bg-white container'>
+        	<p class = "text-center">Software Engineering, Operating Systems, Foundations of Computer Science, Machine Organization and Assembly Language, Accelerated Object-Oriented design concepts, Systems Programming concepts, Algorithms, Discrete Mathematics, Introduction to ECE, Calculus I - IV, Physics 1, Physics 2, Statistics, Probability</p>
+        </div>
+        <br>
+    
+    <div class = "bg-danger container">
+    	<h4 class = "text-white text-center"><strong>Classes & Projects</strong></h4>
+	</div>
+    <div class = "bg-white container">
+        <button class="bg-white accordion"><strong>Software Engineering</strong></button>
         <div class="panel">
             <h3><strong>Hospital Path-finding Application</strong></h3>
             <h4>Assistant Lead Software Developer; Database specialty</h4>
@@ -113,7 +153,7 @@
             <br/>I also learned a lot about databases, user interfaces, creating more efficient back-ends, designing clean and intuitive applications, and a strong understanding of java and programming in general</p>
         </div>
 
-        <button class="accordion"><strong>Operating Systems</strong></button>
+        <button class="bg-white accordion"><strong>Operating Systems</strong></button>
         <div class="panel">
             <ul class = "list-unstyled">
                 <li>
@@ -188,7 +228,7 @@
             </ul>
         </div>
 
-        <button class="accordion"><strong>Machine Organization & Assembly Language</strong></button>
+        <button class="bg-white accordion"><strong>Machine Organization & Assembly Language</strong></button>
         <div class="panel">
             <ul class = "list-unstyled">
                 <li>
@@ -232,7 +272,7 @@
             </ul>
         </div>
 
-        <button class="accordion"><strong>Accelerated Object-Oriented Design Concepts</strong></button>
+        <button class="bg-white accordion"><strong>Accelerated Object-Oriented Design Concepts</strong></button>
         <div class="panel">
             <ul class = "list-unstyled">
                 <li>
