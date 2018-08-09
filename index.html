@@ -7,6 +7,14 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <style>
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 75%;
+            }
+        </style>
 
         <!-- Accordion CSS -->
         <style>
@@ -118,7 +126,7 @@
     	<h4 class = "text-white text-center"><strong>Classes & Projects</strong></h4>
 	</div>
     <div class = "bg-white container">
-        <button class="bg-white accordion"><strong>Software Engineering</strong></button>
+        <button class="bg-white accordion"><strong>Software Engineering</strong> (click here)</button>
         <div class="panel">
             <h3><strong>Hospital Path-finding Application</strong></h3>
             <h4>Assistant Lead Software Developer; Database specialty</h4>
@@ -129,31 +137,72 @@
 
                 <li>As an assistant lead software engineer, I helped gather software requirements through surveys, interviews, brainstorming, creating user stories, scenarios and storyboards. I was responsible for writing the database components of the application as well as the pathfinding UI. I designed the database subsystem of the application through the creation of UML use case, class, sequence, and activity diagrams. I was the technical leader of the entire database subgroup.</li>
 
-                <li>While I worked on the database team, I learned about every aspect of the project through good team communication and helping all teams as assistant lead software developer</li>
-                <li>Application was to be run on kiosks placed throughout the hopsital</li>
-                <li>Implemented the A* algorithm to determine the shortest path between a given start and end node</li>
+                <li>As part of the database team I spent a lot of time building all of our databases and updating them to increase efficiency and killing bugs using the IntelliJ debugger</li>
+                <li>Although I worked on the database team, I learned about many new systems through good team communication and helping other teams as assistant lead software developer</li>
+                <li>I helped create a design that would be intuituve and accessible for all hopsital guests</li>
+                <li>The application found paths through 2D and 3D nodes placed on respective 2D and 3D maps of the hospital</li>
+                <li>We implemented the A* algorithm to determine the shortest path between a given start and end node</li>
+                <li>I designed and built a fully rotatable and zoomable map with custom icons, an animated path, and more</li>
                 <li>Using Dijkstra's algorithm, users can choose from a list of "quick destinations" like the nearest bathroom or cafeteria</li>
-                <li>Users can also login, with a user database, for more functionality</li>
+                <li>I helped create a user database that allows guests and employees to login for more functionality</li>
                 <li>Users consisted of doctors, patients, nurses, and hospital staff</li>
                 <li>Patients can request for help from nurses or hospital staff</li>
-                <li>When a patient requests for help, their request is sent to the request database where nurses, doctors, and staff can see the request, fulfill it, and then mark it as completed</li>
-                <li>Map builder allows admins to edit, add, and remove nodes quickly and intuitively</li>
-                <li>Built a Room Service API that allows admins to keep track of inventory as well as users to request items from the inventory</li>
-                <li>Integrated multiple other team's APIs</li>
-                <li>Fully rotatable and zoomable map with custom icons</li>
+                <li>In order to fulfill requests, I helped create a request database where nurses, doctors, and staff can see the request, fulfill it, and then mark it as completed</li>
+                <li>We created a map builder that allows admins to edit, add, and remove nodes quickly and intuitively</li>
+                <li>I helped build a Room Service API that allows admins to keep track of inventory as well as users to request items from the inventory</li>
+                <li>We created a kiosk history database that allows us to show the history of past interactions with the kiosk and revert them if needed (such as an accidental deletion of a user)
+                <li>We also integrated multiple other team's APIs for extra funcitonality and some special features that are explained below</li>
 
                 <li>Our team successfully delivered the requested application at the end of the seven-week term. We were recognized for: 
                     <ul>
-                        <li><strong>Iteration 3 Best Feature: </strong>Emergency System<br>For this feature we used a server to allow all kiosks to communicate. Specifically, an admin could set every kiosk to "emergency mode" where the path to the nearest exit would be shown. We also used an arduino to create an automatic fire detector that would set off emergency mode if it detected a fire.</li>
-                        <li><strong>Iteration4 Best Feature: </strong>Web App<br>For this feature we created a companion web app that allowed admin functionality. The web app was connected with our main database and information was passed between them.</li> </ul> </li>
+                        <li><strong>Iteration 3 Best Feature: </strong>Emergency System<br>For this feature we used a server to allow all kiosks to communicate. Specifically, an admin could set every kiosk in the hopsital to "emergency mode" where the path to the nearest exit would be shown. We also used an arduino to create an automatic fire detector that would set off emergency mode if it detected a fire.</li>
+                        <li><strong>Iteration 4 Best Feature: </strong>Web App<br>For this feature we created a companion android web app that allowed admin functionality. The web app was connected with our main database and all our information was passed between them. The app also had access to our emergency system.</li> </ul> </li>
 
             </ul>
             <h5>Class Outcome</h5>
-            <p>This class taught me much more than any other. Most importantly, learning to work with a large group on a single project was challenging, but in the end I gained project management skills, accountability, work-ethic, and confidence in learning new and daunting skills
-            <br/>I also learned a lot about databases, user interfaces, creating more efficient back-ends, designing clean and intuitive applications, and a strong understanding of java and programming in general</p>
+            <p>This class taught me much more than any other. Most importantly, learning to work with a large group on a single project was challenging, but in the end I gained project management skills, accountability, work-ethic, and confidence in myself. I never could have done this without the hard work of my team. Working together with them for 15+ hours per day, working through the night multiple times per week, and bonding over dinner was one of the most memorable and valuable learning experiences I've ever had.
+            <br/>On top of this, I learned a lot about designing and building databases, user interfaces, creating more efficient back-ends, designing clean and intuitive applications, and a strong understanding of java and programming in general</p>
+
+            <!-- Tried to get an applet to run 
+            <hr>
+            <applet code = "app.class" width = "300" height = "300">
+            </applet>
+            <hr>
+            -->
+            <br>
+            <p>Idle screen</p>
+            <img src = "b.png" class = "center">
+            <br>
+            <p>Home map screen. Notice the floor buttons on the left, start and end destination autofill search bar on top, rotation and zoom buttons bottom-left, breadcrumb floors bottom-middle, and quick-search, home button, and help on bottom-right</p>
+            <img src = "c.png" class = "center">
+            <br>
+            <p>Path example with step-by-step directions (icons on step-by-step don't load on my mac), and breadcrumbs show which floors you are transversing</p>
+            <img src = "d.png" class = "center">
+            <br>
+            <p>Example of the map after being rotated and zoomed out</p>
+            <img src = "a.png" class = "center">
+            <br>
+            <p>Example of the 3D map with a path</p>
+            <img src = "f.png" class = "center">
+            <br>
+            <p>Our room service API</p>
+            <img src = "e.png" class = "center">
+            <br>
+            <p>Request Manager page showing open/closed requests as well as the details of the request. This page also gives the ability to remove requests or mark them completed. The pie chart on the right shows the type of requests that are currently in the system.</p>
+            <img src = "g.png" class = "center">
+            <br>
+            <p>Node editor page. Here you can add/remove/modify nodes and edges on the 2D and 3D maps</p>
+            <img src = "h.png" class = "center">
+            <br>
+            <p>Account manager page allows the creation, deletion, and modification of users</p>
+            <img src = "i.png" class = "center">
+            <br>
+            <p>Kiosk history log that shows all past interactions with the kiosk and gives the ability to revert changes</p>
+            <img src = "j.png" class = "center">
+
         </div>
 
-        <button class="bg-white accordion"><strong>Operating Systems</strong></button>
+        <button class="bg-white accordion"><strong>Operating Systems</strong> (click here)</button>
         <div class="panel">
             <ul class = "list-unstyled">
                 <li>
@@ -228,7 +277,7 @@
             </ul>
         </div>
 
-        <button class="bg-white accordion"><strong>Machine Organization & Assembly Language</strong></button>
+        <button class="bg-white accordion"><strong>Machine Organization & Assembly Language</strong> (click here)</button>
         <div class="panel">
             <ul class = "list-unstyled">
                 <li>
@@ -272,7 +321,7 @@
             </ul>
         </div>
 
-        <button class="bg-white accordion"><strong>Accelerated Object-Oriented Design Concepts</strong></button>
+        <button class="bg-white accordion"><strong>Accelerated Object-Oriented Design Concepts</strong> (click here)</button>
         <div class="panel">
             <ul class = "list-unstyled">
                 <li>
