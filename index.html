@@ -97,7 +97,7 @@
             <p class = "list-inline-item">508-341-4471</p>
             <p class = "list-inline-item">armorrison@wpi.edu</p>
         </ul>
-        <p class = "text-center">Worcester Polytechnic Institute '20<br/>Computer Science<br/>GPA: 3.23<br>Graduated from Saint John's High School (Shrewsbury, MA)<br></p>
+        <p class = "text-center">Worcester Polytechnic Institute '20<br/>Computer Science<br/>GPA: 3.32<br>Graduated from Saint John's High School (Shrewsbury, MA)<br></p>
     </div>
     <br>
 
@@ -108,7 +108,7 @@
         <div class = "bg-white container">
         	<p class = "text-center">
             	<ul>
-                	<li><strong>Programming Languages: </strong>Java, C, C++, Python, Oracle, JavaDB, JavaFX, MySQL, HTML, JavaScript</li>
+                	<li><strong>Programming Languages: </strong>Java, C, C#, C++, Python, Oracle, JavaDB, JavaFX, MySQL, HTML, JavaScript</li>
                 	<li><strong>Software Development Tools: </strong>IntelliJ IDE, Eclipse IDE, PyCharm IDE, Sublime, Atom, GitHub, Gradle, TravisCI, Scenebuilder</li>
                 	<li><strong>Agile Project Management Tools: </strong>GitHub Project, Slack, Trello, Scrum, UML</li>
                 	<li><strong>Other: </strong>Windows, Mac, Linux, Wireshark, Intel x86, Unity, Maya, Photoshop, Graph Theory, Microsoft Office</li>
@@ -171,8 +171,51 @@
     <div class = "container" style = "background-color: black">
     	<h4 class = "text-white text-center"><strong>Classes & Projects</strong></h4>
 	</div>
-
     <div class = "bg-white container">
+
+    <!-- Start of classes --> 
+
+    <button class="bg-white accordion"><strong>Unity Game Development and the Complete C# Masterclass</strong> (click here)</button>
+        <div class="panel">
+            <ul class = "list-unstyled">
+                <li>
+                    <h3><strong>Unity Game Development (In Progress)</strong></h3>
+                    <h4>Online Course</h4>
+                    <h5>Nov, 2018 - Now</h5>
+                    <h5>C#</h5>
+                    <ul>
+                        <li>I decided to take this course, in my free time, to gain a deeper understanding of Unity and C#.</li>
+                        <li>The goal was to make a complete 2D, top-down, action game using Unity</li>
+                        <li>I personally designed and created all assets. This includes animations, prefabs, scenes, scripts and sprites.</li>
+                        <li>Used C# to give the player movement, the ability to fire projectiles at enemies, and more.</li>
+                        <li>Added multiple weapon types and pickups for the player to utilize</li>
+                        <li>Designed and built several enemies with unique powers and simple Artificial Intelligence</li>
+                        <li>Carefully constructed an interesting and challenging boss character</li>
+                        <li>Built a main menu screen and several other UI components</li>
+                        <li>Finally, created a win and lose cutscene</li>
+                        <li></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <h3><strong>Complete C# Masterclass (In Progress)</strong></h3>
+                    <h4>Online Course</h4>
+                    <h5>Nov, 2018</h5>
+                    <h5>C#</h5>
+                    <ul>
+                        <li>I decided to take this course, in my free time, to get a formal introduction to C#.</li>
+                        <li>Learned how to do the following in C#: data types, variables, functions, if statments, loops, arrays, multidimensional arrays, OOP, inheritance, polymorphism, Databases with C#, Linq, threads, and more basic and advanced topics.</li>
+                    </ul>
+                </li>
+
+
+            </ul>
+            <!--
+            <h5>Class Outcome</h5>
+            <p>This course gave me a broad understanding of computer networks. I understand all seven laters of the OSI Reference model. The topics I learned about: physical layer considerations, network protocols, wide area networks, local area networks, wireless networks, switches and routing, congestion, Internet traffic and network security.</p> -->
+            </ul>
+        </div>
+
     <button class="bg-white accordion"><strong>Computer Networks</strong> (click here)</button>
         <div class="panel">
             <ul class = "list-unstyled">
@@ -182,17 +225,38 @@
                     <h5>Sept, 2018</h5>
                     <h5>C</h5>
                     <ul>
-                        <li>Created an HTTP client and server</li>
-                        <li>Fully implemented client could recieve HTML files from the internet and even from our server. The server could send HTML files and be connected to by any browser/client</li>
-                        <li>Learned about Round Trip Time, TCP connections, and HTTP requests</li>
+                        <li>Created an HTTP client and server running on the HTTP protocol</li>
+                        <li>Fully implemented client could recieve HTML files from the internet and from our server. The server could send HTML files and be connected to by any browser/client</li>
+                        <li>Learned about Round Trip Time, TCP connections, HTTP requests, HTTP responses, and sockets</li>
                     </ul>
                 </li>
                 <li>
-                    <strong>Project2</strong></h3>
+                    <h3><strong>Implementing Reliable Data Transfer Protocol</strong></h3>
+                    <h4>Pair programming</h4>
+                    <h5>Sept, 2018</h5>
+                    <h5>C</h5>
+                    <ul>
+                        <li>Designed a system for sending and recieving transport-level code to implement Alternating-Bit-Protocol</li>
+                        <li>The system consisted of two simulated entities (A and B) that would send and recieve packets across an unreliable connection. This means that packets can be corrupted or lost after they are sent.</li>
+                        <li>Error checking had to be included to elimated any lost or corrupted packets. The two strategies we used were checksumming and positive or negative acknowledgement of packets that were recieved (or lost). This way the other system could resend the packet if something went wrong.</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3><strong>Distance Vector Routing Protocol</strong></h3>
+                    <h4>Pair programming</h4>
+                    <h5>Oct, 2018</h5>
+                    <h5>C</h5>
+                    <ul>
+                        <li>Designed and implemented a distributed asynchronous distance vector routing protocol</li>
+                        <li>Created IP-level messages to route data over the network</li>
+                        <li>The network consisted of nodes, each containing a distance table that contained the shortest path to each of its neighbors. The table was empty at the beginning of execution.</li>
+                        <li>To begin, the first node in the network would broadcast its shortest connection to its neighbors. Every node that recieved this data now updated its distance table, and then broadcasted its own shortest path to every other node.</li>
+                        <li>At termination, each node in the network knew its shortest path to every other node. Now distance vector routing could be used to send data between nodes using the shortest possible path</li>
+                    </ul>
                 </li>
             </ul>
             <h5>Class Outcome</h5>
-            <p>Not finished yet.</p>
+            <p>This course gave me a broad understanding of computer networks. I understand all seven laters of the OSI Reference model. The topics I learned about: physical layer considerations, network protocols, wide area networks, local area networks, wireless networks, switches and routing, congestion, Internet traffic and network security.</p>
             </ul>
         </div>
 
@@ -288,7 +352,6 @@
                         <li>In addition, disc was simulated by a file that stored evicted pages that could be later swapped back into memory by the memory manager</li>
                         <li>Users could choose a process to run and request more memory, store a value in memory, or load a value from memory</li>
                     </ul>
-                    <hr>
                 </li>
                 <li>
                     <h3><strong>Threads and Synchronization</strong></h3>
@@ -302,7 +365,6 @@
                         <li>Used condition variables to improve fairness and efficiency</li>
                         <li>Learned strategies to prevent deadlock, livelock, and race conditions</li>
                     </ul>
-                    <hr>
                 </li>
                 <li>
                     <h3><strong>Kernel Interception</strong></h3>
@@ -316,7 +378,6 @@
                         <li>procAncestry is an executable given a PID</li>
                         <li>It will then navigate to the given PID and begin climbing its ancestral tree and return all related processes including all parents (and parents of parents), children (and children of children), and siblings</li>
                     </ul>
-                    <hr>
                 </li>
                 <li>
                     <h3><strong>Midday Commander</strong></h3>
@@ -330,7 +391,6 @@
                         <li>Users can add any custom command using add command and can specify it as a background task by adding a '&' to the end of the command</li>
                         <li>Learned about process creation, termination, and resource management</li>
                     </ul>
-                    <hr>
                 </li>
                 <h5>Class Outcome</h5>
                 <ul class = "list-unstyled">
@@ -363,7 +423,6 @@
                         <li>Wrote a matrix transpose function to optimally use the cache</li>
                         <li>Learned how cahces work and how to use them effectively</li>
                     </ul>
-                    <hr>
                 </li>
                 <li>
                     <h3><strong>AttackLab</strong></h3>
@@ -376,7 +435,6 @@
                         <li>Discovered many types of security vulnerabilities and how to exploit them</li>
                         <li>Learned how to write more secure programs</li>
                     </ul>
-                    <hr>
                 </li>
                 <li>
                     <h3><strong>BombLab</strong></h3>
@@ -386,7 +444,6 @@
                     <ul>
                         <li>Defused a binary bomb with multiple phases by using the gdb debugger and stepping assembly code</li>
                     </ul>
-                    <hr>
                 </li>
             </ul>
             <h5>Class Outcome</h5>
@@ -407,7 +464,6 @@
                         <li>Wrote a parsing algorithm for the 30,000,000 line IMDB database to create actor and movie nodes</li>
                         <li>Extracted a graph from this database using a Breadth-First-Search algorithm</li>
                     </ul>
-                    <hr>
                 </li>
             </ul>
             <h5>Class Outcome</h5>
@@ -431,7 +487,6 @@
         </script>
         <!-- More goes here -->
     </div><br>
-<!-- Not sure why these aren't closed but it works so... -->
 </div></ul></div>
 <br><br><br>
 
